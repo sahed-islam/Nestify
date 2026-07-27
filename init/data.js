@@ -1,351 +1,223 @@
 const sampleListings = [
   {
-    title: "Cozy Beachfront Cottage",
+    title: "Beachfront Cottage in Cox's Bazar",
     description:
-      "Escape to this charming beachfront cottage for a relaxing getaway. Enjoy stunning ocean views and easy access to the beach.",
+      "Wake up to the sound of waves at this cozy cottage steps away from the world's longest natural sea beach. Walking distance to Laboni Point and local seafood restaurants.",
     image: {
       filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 1500,
-    location: "Malibu",
-    country: "United States",
-  },
-  {
-    title: "Modern Loft in Downtown",
-    description:
-      "Stay in the heart of the city in this stylish loft apartment. Perfect for urban explorers!",
-    image: {
-      filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 1200,
-    location: "New York City",
-    country: "United States",
-  },
-  {
-    title: "Mountain Retreat",
-    description:
-      "Unplug and unwind in this peaceful mountain cabin. Surrounded by nature, it's a perfect place to recharge.",
-    image: {
-      filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWxzfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 1000,
-    location: "Aspen",
-    country: "United States",
-  },
-  {
-    title: "Historic Villa in Tuscany",
-    description:
-      "Experience the charm of Tuscany in this beautifully restored villa. Explore the rolling hills and vineyards.",
-    image: {
-      filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWxzfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 2500,
-    location: "Florence",
-    country: "Italy",
-  },
-  {
-    title: "Secluded Treehouse Getaway",
-    description:
-      "Live among the treetops in this unique treehouse retreat. A true nature lover's paradise.",
-    image: {
-      filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdGVsc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 800,
-    location: "Portland",
-    country: "United States",
-  },
-  {
-    title: "Beachfront Paradise",
-    description:
-      "Step out of your door onto the sandy beach. This beachfront condo offers the ultimate relaxation.",
-    image: {
-      filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGhvdGVsc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 2000,
-    location: "Cancun",
-    country: "Mexico",
-  },
-  {
-    title: "Rustic Cabin by the Lake",
-    description:
-      "Spend your days fishing and kayaking on the serene lake. This cozy cabin is perfect for outdoor enthusiasts.",
-    image: {
-      filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1vdW50YWlufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 900,
-    location: "Lake Tahoe",
-    country: "United States",
-  },
-  {
-    title: "Luxury Penthouse with City Views",
-    description:
-      "Indulge in luxury living with panoramic city views from this stunning penthouse apartment.",
-    image: {
-      filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1622396481328-9b1b78cdd9fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2t5JTIwdmFjYXRpb258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
+      url: "https://images.unsplash.com/photo-1665805397302-79f6419c2bdb?auto=format&fit=crop&w=800&q=60",
     },
     price: 3500,
-    location: "Los Angeles",
-    country: "United States",
+    location: "Cox's Bazar",
   },
   {
-    title: "Ski-In/Ski-Out Chalet",
+    title: "Hill View Resort in Bandarban",
     description:
-      "Hit the slopes right from your doorstep in this ski-in/ski-out chalet in the Swiss Alps.",
+      "Nestled among the hills of Bandarban, this resort offers sweeping views of the Chittagong Hill Tracts, cool mountain air, and easy access to Nilachal and Golden Temple.",
     image: {
       filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1502784444187-359ac186c5bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNreSUyMHZhY2F0aW9ufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+      url: "https://images.unsplash.com/photo-1751769539073-d675c0ac98d6?auto=format&fit=crop&w=800&q=60",
     },
-    price: 3000,
-    location: "Verbier",
-    country: "Switzerland",
+    price: 4200,
+    location: "Bandarban",
   },
   {
-    title: "Safari Lodge in the Serengeti",
+    title: "Lakeside Cottage in Rangamati",
     description:
-      "Experience the thrill of the wild in a comfortable safari lodge. Witness the Great Migration up close.",
+      "Relax by the tranquil Kaptai Lake in this peaceful cottage, perfect for boat rides to hanging bridges and quiet sunset views over the water.",
     image: {
       filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fG1vdW50YWlufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 4000,
-    location: "Serengeti National Park",
-    country: "Tanzania",
-  },
-  {
-    title: "Historic Canal House",
-    description:
-      "Stay in a piece of history in this beautifully preserved canal house in Amsterdam's iconic district.",
-    image: {
-      filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FtcGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 1800,
-    location: "Amsterdam",
-    country: "Netherlands",
-  },
-  {
-    title: "Private Island Retreat",
-    description:
-      "Have an entire island to yourself for a truly exclusive and unforgettable vacation experience.",
-    image: {
-      filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1618140052121-39fc6db33972?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bG9kZ2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 10000,
-    location: "Fiji",
-    country: "Fiji",
-  },
-  {
-    title: "Charming Cottage in the Cotswolds",
-    description:
-      "Escape to the picturesque Cotswolds in this quaint and charming cottage with a thatched roof.",
-    image: {
-      filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1602088113235-229c19758e9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmVhY2glMjB2YWNhdGlvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 1200,
-    location: "Cotswolds",
-    country: "United Kingdom",
-  },
-  {
-    title: "Historic Brownstone in Boston",
-    description:
-      "Step back in time in this elegant historic brownstone located in the heart of Boston.",
-    image: {
-      filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1533619239233-6280475a633a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNreSUyMHZhY2F0aW9ufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+      url: "https://images.unsplash.com/photo-1657984906170-70878d43ef0b?auto=format&fit=crop&w=800&q=60",
     },
     price: 2200,
-    location: "Boston",
-    country: "United States",
+    location: "Rangamati",
   },
   {
-    title: "Beachfront Bungalow in Bali",
+    title: "Tea Garden Bungalow in Sreemangal",
     description:
-      "Relax on the sandy shores of Bali in this beautiful beachfront bungalow with a private pool.",
+      "Stay amid rolling tea gardens in the tea capital of Bangladesh. Wake up to misty mornings, sip Seven-Color tea, and explore Lawachara nearby.",
     image: {
       filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1602391833977-358a52198938?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGNhbXBpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 1800,
-    location: "Bali",
-    country: "Indonesia",
-  },
-  {
-    title: "Mountain View Cabin in Banff",
-    description:
-      "Enjoy breathtaking mountain views from this cozy cabin in the Canadian Rockies.",
-    image: {
-      filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1521401830884-6c03c1c87ebb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGxvZGdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 1500,
-    location: "Banff",
-    country: "Canada",
-  },
-  {
-    title: "Art Deco Apartment in Miami",
-    description:
-      "Step into the glamour of the 1920s in this stylish Art Deco apartment in South Beach.",
-    image: {
-      filename: "listingimage",
-      url: "https://plus.unsplash.com/premium_photo-1670963964797-942df1804579?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGxvZGdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 1600,
-    location: "Miami",
-    country: "United States",
-  },
-  {
-    title: "Tropical Villa in Phuket",
-    description:
-      "Escape to a tropical paradise in this luxurious villa with a private infinity pool in Phuket.",
-    image: {
-      filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1470165301023-58dab8118cc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGxvZGdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 3000,
-    location: "Phuket",
-    country: "Thailand",
-  },
-  {
-    title: "Historic Castle in Scotland",
-    description:
-      "Live like royalty in this historic castle in the Scottish Highlands. Explore the rugged beauty of the area.",
-    image: {
-      filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1585543805890-6051f7829f98?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJlYWNoJTIwdmFjYXRpb258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 4000,
-    location: "Scottish Highlands",
-    country: "United Kingdom",
-  },
-  {
-    title: "Desert Oasis in Dubai",
-    description:
-      "Experience luxury in the middle of the desert in this opulent oasis in Dubai with a private pool.",
-    image: {
-      filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1518684079-3c830dcef090?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZHViYWl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 5000,
-    location: "Dubai",
-    country: "United Arab Emirates",
-  },
-  {
-    title: "Rustic Log Cabin in Montana",
-    description:
-      "Unplug and unwind in this cozy log cabin surrounded by the natural beauty of Montana.",
-    image: {
-      filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1586375300773-8384e3e4916f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGxvZGdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 1100,
-    location: "Montana",
-    country: "United States",
-  },
-  {
-    title: "Beachfront Villa in Greece",
-    description:
-      "Enjoy the crystal-clear waters of the Mediterranean in this beautiful beachfront villa on a Greek island.",
-    image: {
-      filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dmlsbGF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
+      url: "https://images.unsplash.com/photo-1751769539073-d675c0ac98d6?auto=format&fit=crop&w=800&q=60",
     },
     price: 2500,
-    location: "Mykonos",
-    country: "Greece",
+    location: "Sreemangal",
   },
   {
-    title: "Eco-Friendly Treehouse Retreat",
+    title: "Riverside Forest Lodge in Sundarbans",
     description:
-      "Stay in an eco-friendly treehouse nestled in the forest. It's the perfect escape for nature lovers.",
+      "Stay by the world's largest mangrove forest on a riverside lodge, home to the Royal Bengal Tiger. Boat safaris into the forest depart nearby.",
     image: {
       filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1488462237308-ecaa28b729d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2t5JTIwdmFjYXRpb258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 750,
-    location: "Costa Rica",
-    country: "Costa Rica",
-  },
-  {
-    title: "Historic Cottage in Charleston",
-    description:
-      "Experience the charm of historic Charleston in this beautifully restored cottage with a private garden.",
-    image: {
-      filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1587381420270-3e1a5b9e6904?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGxvZGdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 1600,
-    location: "Charleston",
-    country: "United States",
-  },
-  {
-    title: "Modern Apartment in Tokyo",
-    description:
-      "Explore the vibrant city of Tokyo from this modern and centrally located apartment.",
-    image: {
-      filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1480796927426-f609979314bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHRva3lvfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 2000,
-    location: "Tokyo",
-    country: "Japan",
-  },
-  {
-    title: "Lakefront Cabin in New Hampshire",
-    description:
-      "Spend your days by the lake in this cozy cabin in the scenic White Mountains of New Hampshire.",
-    image: {
-      filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1578645510447-e20b4311e3ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fGNhbXBpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 1200,
-    location: "New Hampshire",
-    country: "United States",
-  },
-  {
-    title: "Luxury Villa in the Maldives",
-    description:
-      "Indulge in luxury in this overwater villa in the Maldives with stunning views of the Indian Ocean.",
-    image: {
-      filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
-    },
-    price: 6000,
-    location: "Maldives",
-    country: "Maldives",
-  },
-  {
-    title: "Ski Chalet in Aspen",
-    description:
-      "Hit the slopes in style with this luxurious ski chalet in the world-famous Aspen ski resort.",
-    image: {
-      filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGxha2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
+      url: "https://images.unsplash.com/photo-1657984906170-70878d43ef0b?auto=format&fit=crop&w=800&q=60",
     },
     price: 4000,
-    location: "Aspen",
-    country: "United States",
+    location: "Sundarbans",
   },
   {
-    title: "Secluded Beach House in Costa Rica",
+    title: "Riverside Villa in Sylhet",
     description:
-      "Escape to a secluded beach house on the Pacific coast of Costa Rica. Surf, relax, and unwind.",
+      "Surrounded by lush greenery and winding rivers, this villa is a comfortable base for exploring Sylhet's tea estates and natural beauty.",
     image: {
       filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2glMjBob3VzZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      url: "https://images.unsplash.com/photo-1657984906170-70878d43ef0b?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 3000,
+    location: "Sylhet",
+  },
+  {
+    title: "Riverside Cottage in Jaflong",
+    description:
+      "Wake up to the sound of the Piyain River with views of the hills of Meghalaya just across the border. A short walk to the stone-collecting river banks.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1558673810-9b0b6316d4f4?auto=format&fit=crop&w=800&q=60",
     },
     price: 1800,
-    location: "Costa Rica",
-    country: "Costa Rica",
+    location: "Jaflong",
+  },
+  {
+    title: "Serviced Apartment in Gulshan, Dhaka",
+    description:
+      "Stay in the heart of Dhaka's diplomatic zone with easy access to fine dining, shopping, and the city's business districts. Ideal for both leisure and work trips.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1657984906170-70878d43ef0b?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 6000,
+    location: "Dhaka",
+  },
+  {
+    title: "Beach Resort in Saint Martin's Island",
+    description:
+      "Bangladesh's only coral island offers crystal-clear water and a laid-back island escape unlike anywhere else in the country. Best visited November through February.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1665805397302-79f6419c2bdb?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 4500,
+    location: "Saint Martin's Island",
+  },
+  {
+    title: "Forest Lodge near Lawachara National Park",
+    description:
+      "Stay within earshot of hoolock gibbons at this eco-lodge bordering one of Bangladesh's last patches of rainforest, close to Sreemangal's tea trails.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1751769539073-d675c0ac98d6?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 2200,
+    location: "Lawachara, Moulvibazar",
+  },
+  {
+    title: "Historic Riverside House in Old Dhaka",
+    description:
+      "Stay near the Buriganga River in a house that captures the character of Old Dhaka's centuries-old streets, close to Ahsan Manzil and Sadarghat.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1657984906170-70878d43ef0b?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 2800,
+    location: "Old Dhaka",
+  },
+  {
+    title: "Hilltop Cottage in Khagrachari",
+    description:
+      "A quiet hilltop escape with panoramic views over the valleys of the Chittagong Hill Tracts, near Alutila Cave and Risang Waterfall.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1751769539073-d675c0ac98d6?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 1800,
+    location: "Khagrachari",
+  },
+  {
+    title: "Beach Bungalow in Kuakata",
+    description:
+      "Watch both sunrise and sunset over the sea from this bungalow on Bangladesh's 'Daughter of the Sea' beach, a quieter alternative to Cox's Bazar.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1665805397302-79f6419c2bdb?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 2200,
+    location: "Kuakata",
+  },
+  {
+    title: "Boutique Hotel in Chittagong",
+    description:
+      "A comfortable stay in Bangladesh's major port city, close to the hills, harbor, Patenga Beach, and colonial-era architecture of the old town.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1657984906170-70878d43ef0b?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 3200,
+    location: "Chittagong",
+  },
+  {
+    title: "Riverside Cottage in Barisal",
+    description:
+      "Experience the 'Venice of Bengal' from a cottage along the Kirtankhola River, surrounded by canals, floating guava markets, and rice paddies.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1657984906170-70878d43ef0b?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 1700,
+    location: "Barisal",
+  },
+  {
+    title: "Farmhouse Stay in Mymensingh",
+    description:
+      "A rustic farmhouse experience surrounded by paddy fields near the Brahmaputra river basin, a peaceful break from city life.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1751769539073-d675c0ac98d6?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 1500,
+    location: "Mymensingh",
+  },
+  {
+    title: "Heritage House in Sonargaon",
+    description:
+      "Stay near the ancient capital of Bengal, surrounded by centuries-old architecture, the Panam City ruins, and folk art museums.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1657984906170-70878d43ef0b?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 1600,
+    location: "Sonargaon",
+  },
+  {
+    title: "Panoramic Suite in Nilgiri, Bandarban",
+    description:
+      "Sleep above the clouds at one of Bangladesh's highest-altitude resorts, with sweeping views of the hill ranges — a favorite for sunrise chasers.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1751769539073-d675c0ac98d6?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 6500,
+    location: "Nilgiri, Bandarban",
+  },
+  {
+    title: "Riverside Camp in Teknaf",
+    description:
+      "Stay at Bangladesh's southernmost tip, where the hills meet the sea near the Naf River, close to the ferry point for Saint Martin's Island.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1665805397302-79f6419c2bdb?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 1500,
+    location: "Teknaf",
+  },
+  {
+    title: "Eco Resort in Bisnakandi",
+    description:
+      "Surrounded by crystal-clear streams and views of the Meghalaya hills, this eco-resort near Sylhet is a monsoon-season favorite for its waterfalls.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1558673810-9b0b6316d4f4?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 2100,
+    location: "Bisnakandi, Sylhet",
   },
 ];
 
