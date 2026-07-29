@@ -1,10 +1,17 @@
+/* body */
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-style: normal !important;
+}
+
 /* navbar */
 .navbar {
   height: 5rem;
 }
 
-.fa-house-flag {
-  /* ← confirm this matches your actual icon class */
+.fa-neos {
   color: red;
   font-size: 2rem;
 }
@@ -14,35 +21,74 @@
 }
 
 /* footer */
-.f-info-links a {
-  text-decoration: none;
-  color: black;
+.f-info {
+  text-align: center;
+  background-color: #ebebeb;
+  min-height: 4rem;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.f-info-links {
+.f-info-socials,
+.f-info-links,
+.f-info-brand {
   width: 100%;
-}
-
-.f-info-socials {
-  width: 100%;
-  font-size: 1.2rem;
-  margin-right: 1 rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .f-info-socials i {
-  margin-right: 1rem;
+  color: black;
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
+}
+
+.f-info-links a {
+  text-decoration: none;
+  color: black;
+  margin: 0 0.5rem;
 }
 
 .f-info-links a:hover {
   text-decoration: underline;
 }
 
-.f-info {
-  text-align: center;
-  background-color: #ebebeb;
-  height: 4rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+/* cards */
+.card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.card-text p {
+  font-weight: 400;
+}
+
+.listing-link{
+  text-decoration: none;
+}
+
+/* card-effect */
+.card-img-overlay {
+  opacity: 0;
+}
+
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: whitesmoke;
 }
