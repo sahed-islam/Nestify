@@ -4,6 +4,13 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif !important;
   font-optical-sizing: auto !important;
   font-style: normal !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
 }
 
 /* navbar */
@@ -12,7 +19,7 @@ body {
 }
 
 .fa-neos {
-  color: red;
+  color: rgb(255, 0, 0);
   font-size: 2rem;
 }
 
@@ -58,6 +65,18 @@ body {
 .f-info-links a:hover {
   text-decoration: underline;
 }
+/* new page */
+.add-btn {
+  background-color: rgb(255, 0, 0) !important;
+  border: none !important;
+}
+
+/* edit page */
+.edit-btn {
+
+}
+
+
 
 /* cards */
 .card {
@@ -79,7 +98,7 @@ body {
   font-weight: 400;
 }
 
-.listing-link{
+.listing-link {
   text-decoration: none;
 }
 

@@ -1,14 +1,33 @@
 <% layout("/layouts/boilerplate") %>
-
-    <body>
-        <h3> Create a new listing </h3>
-        <form method="POST" action="/listing">
-            <input name="listing[title]" placeholder="Enter title" type="text"><br><br>
-            <textarea name="listing[description]" placeholder="Describe your place"></textarea><br><br>
-            <input name="listing[image]" placeholder="Enter image URL/Link" type="text"><br><br>
-            <input name="listing[price]" placeholder="Enter Price" type="number"><br><br>
-            <input name="listing[location]" placeholder="Where are you at"><br><br>
-            <button>Add</button>
-        </form>
-    </body>
-    </body>
+<div class="row">
+  <div class="col-8 offset-2">
+    <br><br>
+    <h3>Create a new listing</h3>
+    <form method="POST" action="/listing">
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input id="title" name="listing[title]" placeholder="Enter title" type="text" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea id="description" name="listing[description]" placeholder="Describe your place" class="form-control"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="image" class="form-label">Image URL</label>
+        <input id="image" name="listing[image][url]" placeholder="Enter image URL/Link" type="text" class="form-control">
+      </div>
+      <div class="row">
+        <div class="mb-3 col-4">
+          <label for="price" class="form-label">Price</label>
+          <input id="price" name="listing[price]" placeholder="Enter Price" type="number" class="form-control">
+        </div>
+        <div class="mb-3 col-md-8">
+          <label for="location" class="form-label">Location</label>
+          <input id="location" name="listing[location]" placeholder="Where are you at" class="form-control">
+        </div>
+      </div>
+      <button class="btn btn-dark add-btn">Add</button>
+      <br><br>
+    </form>
+  </div>
+</div>
