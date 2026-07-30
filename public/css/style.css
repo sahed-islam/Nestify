@@ -111,3 +111,18 @@ body {
   opacity: 0.2;
   background-color: whitesmoke;
 }
+
+/* show page */
+.show-img {
+  height: 30vh;
+}
+
+.btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.show-card {
+  padding-left: 0;
+  padding-right: 0;
+}
